@@ -1,13 +1,36 @@
 <web-app>
 
+<!-- Greeting Servlet -->
 <servlet>
-    <servlet-name>GreetingServlet</servlet-name>
+    <servlet-name>greet</servlet-name>
     <servlet-class>GreetingServlet</servlet-class>
 </servlet>
 
 <servlet-mapping>
-    <servlet-name>GreetingServlet</servlet-name>
+    <servlet-name>greet</servlet-name>
     <url-pattern>/greet</url-pattern>
+</servlet-mapping>
+
+<!-- Client Info Servlet -->
+<servlet>
+    <servlet-name>client</servlet-name>
+    <servlet-class>ClientInfoServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>client</servlet-name>
+    <url-pattern>/client</url-pattern>
+</servlet-mapping>
+
+<!-- Counter Servlet -->
+<servlet>
+    <servlet-name>counter</servlet-name>
+    <servlet-class>CounterServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>counter</servlet-name>
+    <url-pattern>/count</url-pattern>
 </servlet-mapping>
 
 </web-app>
